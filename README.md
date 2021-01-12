@@ -17,3 +17,9 @@
 Neo4J 介绍与安装
 * 安装，可以参考https://www.bbsmax.com/A/D854PD9w5E/
 * 使用，可以参考https://www.w3cschool.cn/neo4j/
+
+## 知识图谱学习第二天：利用Neo4j和Python搭建知识问答系统
+* 下载链接中的模型https://github.com/zhihao-chen/QASystemOnMedicalGraph
+* windows环境下，打开cmd,输入运行构建知识图谱，python build_graph.py （注意需要将build_graph.py中的neo4j的登陆帐户和密码更改为自己的账户密码）
+* 构建完知识图谱之后，可以通过http://localhost:7474/browser/ 进入刚刚构建的知识图谱
+* 启动问答测试python kbqa_test.py，可以和问答系统进行沟通对话

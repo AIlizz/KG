@@ -54,3 +54,13 @@ Neo4j 数据导入
 * 框架中：需要了actree
 * NER中，采用了AC Tres进行查询过滤，并利用相似度查询
 * 意图识别，重点理解人工特征的方法
+
+## 知识图谱学习第六七天：Neo4j 图数据库查询
+在四五天的学习中，我们知道如何利用NLP的一些技术，去识别Query的意图，那么这些意图识别了之后，如何利用数据库的知识给出回答呢？这就是六七天我们需要掌握的知识。<br>
+
+代码解析
+代码参考：https://github.com/zhihao-chen/QASystemOnMedicalGraph
+* 主要包括EntityExtractor 框架介绍，命名实体识别实践NER，意图识别时间
+* 框架中：需要了actree
+* NER中，采用了AC Tres进行查询过滤，并利用相似度查询
+* 意图识别，重点理解人工特征的方法

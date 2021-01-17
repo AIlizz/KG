@@ -60,7 +60,8 @@ Neo4j 数据导入
 
 代码解析
 代码参考：https://github.com/zhihao-chen/QASystemOnMedicalGraph
-* 主要包括EntityExtractor 框架介绍，命名实体识别实践NER，意图识别时间
-* 框架中：需要了actree
-* NER中，采用了AC Tres进行查询过滤，并利用相似度查询
-* 意图识别，重点理解人工特征的方法
+* 代码框架中包括了：init；根据实体和意图去构造cypher查询语句；将问题转化为cypher查询语句；执行cypher查询；根据不同意图，返回不同模板的答案；
+* 根据实体和意图去构造cypher查询语句：主要利用transfor_to_sql将意图转化为sql,返回sql
+* 将问题转化为cypher查询语句: 即为transfor_to_sql方法，根据不同的意图，返回不同的cypher查询语句
+* 执行cypher查询，利用neo4j找到answer,然后调用answer_template得到最终的答案；
+* 根据不同意图，返回不同模板的答案：即为answer_template方法，手动构建的回答模板
